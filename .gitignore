@@ -1,0 +1,19 @@
+# Entornos
+venv/
+.env/
+
+# Python
+__pycache__/
+*.pyc
+
+# Modelos pesados
+yolov8s.pt
+
+# Datos y resultados
+videos/
+outputs/
+vehicle_detection.v3-dataset_v3.yolov8/
+
+# Sistema
+.DS_Store
+Thumbs.db
