@@ -6,13 +6,13 @@ from ultralytics import YOLO
 # ============================
 
 # Ruta al modelo (preentrenado)
-MODEL_PATH = r"C:\Users\cisg1\Desktop\tesis\best.pt"
+MODEL_PATH = r"C:\Users\lasso\Desktop\tesis\yolov8s.pt"
 
 # Ruta al data.yaml exportado desde Roboflow (VERSIÓN 3)
-DATA_YAML = r"C:\Users\cisg1\Desktop\tesis\vehicle_detection.v3-dataset_v3.yolov8\data.yaml"
+DATA_YAML = r"C:\Users\lasso\Desktop\vehicle_detection.v3-dataset_v3.yolov8\data.yaml"
 
 # Carpeta donde YOLO guardará resultados
-PROJECT_DIR = r"C:\Users\cisg1\Desktop\tesis\outputs\metrics"
+PROJECT_DIR = r"C:\Users\lasso\Desktop\tesis\outputs\metrics"
 
 # Nombre del experimento
 RUN_NAME = "yolov8s_eval"

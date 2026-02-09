@@ -1,3 +1,4 @@
+
 from ultralytics import YOLO
 import json
 import csv
@@ -5,9 +6,9 @@ import os
 
 
 def main():
-    MODEL_PATH = r"C:\Users\cisg1\Desktop\tesis\outputs\train\yolov8s_custom\weights\best.pt"
-    DATA_YAML  = r"C:\Users\cisg1\Desktop\tesis\dataset\data.yaml"
-    OUTPUT_DIR = r"C:\Users\cisg1\Desktop\tesis\outputs\metrics"
+    MODEL_PATH = r"C:\Users\lasso\Desktop\tesis\outputs\train\yolov8s_custom\weights\best.pt"
+    DATA_YAML  = r"C:\Users\lasso\Desktop\tesis\dataset\data.yaml"
+    OUTPUT_DIR = r"C:\Users\lasso\Desktop\tesis\outputs\metrics"
 
     os.makedirs(OUTPUT_DIR, exist_ok=True)
 
