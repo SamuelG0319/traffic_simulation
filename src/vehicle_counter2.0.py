@@ -154,8 +154,8 @@ def process_video(video_path, model):
     x_exit = int(EXIT_X_FRAC * w)
 
     # Definir las líneas
-    L1 = ((x_entry, 600), (x_entry, 1080))  # L1: verde (entrada) - 500 * 1080 vertiente 1 - 600 * 1080 vertiente 2
-    L2 = ((x_exit, 600), (x_exit, 1080))    # L2: roja (conteo) - 500 * 1080 vertiente 1 - 600 * 1080 vertiente 2
+    L1 = ((x_entry, 400), (x_entry, 1080))  # L1: verde (entrada) - 500 * 1080 vertiente 1 - 600 * 1080 vertiente 2
+    L2 = ((x_exit, 400), (x_exit, 1080))    # L2: roja (conteo) - 500 * 1080 vertiente 1 - 600 * 1080 vertiente 2
 
     return L1, L2
 
@@ -388,7 +388,7 @@ def process_video(video_path, model):
       y0 += 30
 
     # escribir frame anotado al archivo de salida
-    writer.write(frame)
+    #writer.write(frame)
     pbar.update(1)
 
   cap.release()
@@ -471,7 +471,7 @@ def process_video(video_path, model):
 # Al ejecutar el script, esto es lo que hará.
 
 TEST_FOLDER = r"C:\Users\cisg1\Desktop\tesis\videos\prueba" # Folder de prueba.
-videos = get_all_videos(TEST_FOLDER)
+videos = get_all_videos(TEST_FOLDER) # Llamar a la función para que busque los videos.
 
 print(f"\nSe encontraron {len(videos)}\n")
 
